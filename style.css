@@ -21,6 +21,7 @@ ul li{
 @media (min-width: 768px) {
     .minha-imagem {
         width: 150px;
+            height: 150px;       
     }
 }
     .minha-imagem{
