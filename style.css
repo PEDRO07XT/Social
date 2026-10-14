@@ -18,9 +18,9 @@
 ul li{
     margin-bottom: 20px;
 }
-@media (min-width: 180px) {
+@media (min-width: 768px) {
     .minha-imagem {
-        width: 180px;
+        width: 150px;
     }
 }
     .minha-imagem{
