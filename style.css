@@ -1,0 +1,20 @@
+.btn-social {
+            display: inline-block;         
+            padding: 10px 16px;            
+            background-color: #222222;    
+            color: white;                  
+            text-decoration: none;          
+            border-radius: 8px;             
+            border: 1px solid #444444;
+            transition: background-color 0.2s;
+        }
+        .btn-social img {
+            width: 24px;
+            height: 24px;
+            display: inline-block;
+            vertical-align: middle;        
+            margin-right: 8px;             
+        }
+ul li{
+    margin-bottom: 20px;
+}
