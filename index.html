@@ -5,45 +5,109 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Social</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
     <style>
-        .instagram-me{
-            width: 30px;
-            height: auto;
-        }
-        .github-me{
-            width: 30px;
-            height: auto;
-        }
-        h2{
+        /* Estilos gerais da página */
+        body {
+            background-color: rgb(0, 0, 0);
+            color: white;
+            font-family: sans-serif;
             text-align: center;
+            padding: 20px;
+        }
 
+        /* Foto de perfil para Telemóvel (ecrãs pequenos) */
+        .minha-imagem {
+            width: 130px;
+            height: 130px;
+            object-fit: cover;
+            border-radius: 50%;
+            display: block;
+            margin: 20px auto;
+        }
+
+        /* Regra para Computador (ecrãs a partir de 768px) */
+        @media (min-width: 768px) {
+            .minha-imagem {
+                width: 160px;
+                height: 160px;
+            }
+        }
+
+        p {
+            max-width: 500px;
+            margin: 0 auto 30px auto;
+            line-height: 1.5;
+        }
+
+        /* Estilo da lista de links */
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 12px;
+        }
+
+        /* Estilo dos botões da lista */
+        .btn-social {
+            display: inline-block;
+            padding: 10px 16px;
+            background-color: #222222;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            border: 1px solid #444444;
+            transition: background-color 0.2s;
+            max-width: 90%;
+            text-align: left;
+        }
+
+        .btn-social:hover {
+            background-color: #333333;
+        }
+
+        .btn-social img {
+            width: 24px;
+            height: 24px;
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 8px;
+        }
+
+        .btn-social span {
+            display: inline-block;
+            vertical-align: middle;
         }
     </style>
 </head>
-<body style="background-color: rgb(0, 0, 0);color: white;">
-    <h1 style="text-align: center;">Minhas redes sociais</h1>
+<body>
+
+    <h1>Minhas redes sociais</h1>
     
     <h2>Quem sou eu?</h2>
     
-    <img src="https://i.pinimg.com/736x/0b/6c/44/0b6c44a2bb3e369362c57911c66fbcc9.jpg" class="minha-imagem" alt="peter.nexus@proton.me">
+    <img src="https://i.pinimg.com/736x/0b/6c/44/0b6c44a2bb3e369362c57911c66fbcc9.jpg" class="minha-imagem" alt="Foto de perfil">
   
-    <p style="text-align: center;">Meu nome é Pedro Emanuel, sou estudante do IFCE. <small>"Instituto Federal de Ciência e Tecnologia do Ceará"</small> E estou aprendendo a desenvolver HTML5 e CSS3.</p>
+    <p>Meu nome é Pedro Emanuel, sou estudante do IFCE. <small>"Instituto Federal de Ciência e Tecnologia do Ceará"</small> E estou aprendendo a desenvolver HTML5 e CSS3.</p>
     
-<h2>Como falar comigo?</h2>
-<ul type="none">
-    <li>
-        <a
-             hre="https://www.instagram.com/_pedro.07xt/" target="_blank" class="btn-social"><img src="imagens/logo-instagram.jpg" alt="Instagam"> <span><strong>/_pedro.07xt</strong> - Me segue no Instagram!</span>
-        </a>
-    </li>
+    <h2>Como falar comigo?</h2>
+    
+    <ul>
+        <li>
+            <a href="https://www.instagram.com/_pedro.07xt/" target="_blank" class="btn-social">
+                <img src="imagens/logo-instagram.jpg" alt="Instagram">
+                <span><strong>_pedro.07xt</strong> - Me segue no Instagram!</span>
+            </a>
+        </li>
 
-    <li>
-        <a
-            href="https://github.com/PEDRO07XT" target="_blank" class="btn-social"><img src="imagens/logo-github.jpg" alt="Github">
-            <span><strong>/PEDRO07XT </strong>  - Acesse meu repositório no Github.</span>
-        </a>
-    </li>
-</ul>
+        <li>
+            <a href="https://github.com/PEDRO07XT" target="_blank" class="btn-social">
+                <img src="imagens/logo-github.jpg" alt="GitHub">
+                <span><strong>/PEDRO07XT</strong> - Acesse meu repositório no GitHub.</span>
+            </a>
+        </li>
+    </ul>
+
 </body>
 </html>
