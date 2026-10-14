@@ -18,3 +18,19 @@
 ul li{
     margin-bottom: 20px;
 }
+@media (min-width: 768px) {
+    .minha-imagem {
+        width: 150px;
+    }
+}
+    .minha-imagem{
+            width: 35% auto;
+            height: auto;
+            display: block;
+            border-radius: 50%;
+            display: flex;
+            margin: 0 auto;
+        }
+li{
+    text-align: center;
+}
